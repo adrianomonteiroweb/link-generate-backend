@@ -1,8 +1,14 @@
 const frisby = require("frisby");
 
-const data = require("../data/response-content");
+require("dotenv").config();
 
-const URL = "https://link-generate-backend.herokuapp.com/";
+const PORT = process.env.PORT || 3000;
+
+const data = require("../data/link-generate");
+
+const URL = PORT
+  ? "https://link-generate-backend.herokuapp.com/"
+  : "https://localhost:3000/";
 
 describe("Deploy verify.", () => {
   it("the get request returns a message.", async () => {
