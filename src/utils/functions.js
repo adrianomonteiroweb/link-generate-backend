@@ -1,5 +1,5 @@
-const linkGenerateHandler = async (whatsapp, message) => {
-  const baseURL = "https://api.whatsapp.com/send?phone=55";
+const linkGenerateHandler = async (whatsapp, message, type) => {
+  const baseURL = `https://${type}.whatsapp.com/send?phone=55`;
 
   return `${baseURL}${whatsapp}&text=${encodeURIComponent(message)}`;
 };
