@@ -6,7 +6,7 @@ const linkGenerateService = async (requestBody) => {
 
   const { error } = checkLinkGenerate.validate({ whatsapp, message });
 
-  if (error) return errorConstructor(401, error.message);
+  if (error) return errorConstructor(400, error.message);
 
   const linkWhatsapp = await linkGenerateHandler(whatsapp, message, type);
 
