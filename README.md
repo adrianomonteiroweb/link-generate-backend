@@ -2,7 +2,7 @@
 
 Link generator for whatsapp from number and with message.
 
-### Technologies:
+### Technologies
 
 - node.js
 - express.js
@@ -11,7 +11,7 @@ Link generator for whatsapp from number and with message.
 - Frisby
 - heroku
 
-### How to run the application:
+### How to run the application
 
 ```bash
    npm start
