@@ -1,4 +1,5 @@
 {
   "message": "Link Generate for whatsapp by TakeBlip",
-  "whatsapp": "https://api.whatsapp.com/send?phone=5585989587554&text=Ol%C3%A1"
+  "whatsapp_web": "https://web.whatsapp.com/send?phone=5585989587554&text=Ol%C3%A1",
+  "whatsapp_api": "https://api.whatsapp.com/send?phone=5585989587554&text=Ol%C3%A1"
 }
