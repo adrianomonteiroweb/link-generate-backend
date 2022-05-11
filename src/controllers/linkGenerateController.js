@@ -1,4 +1,4 @@
-const { linkGenerateService } = require("../services/wishes.services");
+const linkGenerateService = require("../services/linkGenerateService");
 
 const linkGenerateController = async (req, res, next) => {
   let getLink;
@@ -15,6 +15,4 @@ const linkGenerateController = async (req, res, next) => {
     : res.status(getLink.code).json({ message: getLink.message });
 };
 
-module.exports = {
-  linkGenerateController,
-};
+module.exports = linkGenerateController;
