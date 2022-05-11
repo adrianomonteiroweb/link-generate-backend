@@ -13,7 +13,7 @@ describe("Link generate test.", () => {
   it("should return a link to whatsapp.", async () => {
     await frisby
       .post(URL, {
-        number: "85989587554",
+        whatsapp: "85989587554",
         message: "Olá",
       })
       .expect("status", 200)
