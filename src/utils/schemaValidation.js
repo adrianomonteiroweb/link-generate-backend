@@ -5,7 +5,6 @@ const checkLinkGenerate = Joi.object({
     .length(11)
     .pattern(/^[0-9]+$/)
     .required(),
-  message: Joi.string(),
 });
 
 module.exports = {

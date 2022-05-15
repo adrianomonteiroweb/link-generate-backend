@@ -4,7 +4,7 @@ const { checkLinkGenerate } = require("../utils/schemaValidation");
 const linkGenerateService = async (requestBody) => {
   const { whatsapp, message, type } = requestBody;
 
-  const { error } = checkLinkGenerate.validate({ whatsapp, message });
+  const { error } = checkLinkGenerate.validate({ whatsapp });
 
   if (error) return errorConstructor(400, error.message);
 
