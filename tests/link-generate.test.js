@@ -7,7 +7,7 @@ const data = require("../data/link-generate");
 const URL =
   PORT !== 3000
     ? "https://link-generate-backend.herokuapp.com/"
-    : "http://localhost:3000/";
+    : "http://localhost:3338/";
 
 describe("Link generate test.", () => {
   it("should return a link to whatsapp for desktop.", async () => {
